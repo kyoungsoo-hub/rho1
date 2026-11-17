@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large datasets and generated buffers (multi-GB)
+metamotivo-M-1-datasets/
+*.hdf5
+*.h5
+*.npz
+
+# Model checkpoints (~330MB each, exceeds GitHub 100MB limit)
+*.pt
+*.pth

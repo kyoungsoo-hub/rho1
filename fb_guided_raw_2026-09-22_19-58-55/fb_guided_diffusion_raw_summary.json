@@ -1,0 +1,20 @@
+{
+  "best_prior_loss": 0.3951683168789809,
+  "best_guided_score": 0.21126866489934923,
+  "best_guided_prior": 0.39549110031847134,
+  "prior_reference": 1.1389461942675159,
+  "prior_limit": 1.1617251181528663,
+  "has_guided_checkpoint": true,
+  "best_prior_checkpoint": "/home/kyoungsookim/rho1/fb_guided_raw_2026-09-22_19-58-55/fb_guided_diffusion_raw_best_prior.pt",
+  "best_guided_checkpoint": "/home/kyoungsookim/rho1/fb_guided_raw_2026-09-22_19-58-55/fb_guided_diffusion_raw_best.pt",
+  "final_checkpoint": "/home/kyoungsookim/rho1/fb_guided_raw_2026-09-22_19-58-55/fb_guided_diffusion_raw_785dim.pt",
+  "hidden_dim": 1024,
+  "transition_dim": 785,
+  "action_clip": 1.0,
+  "shared_split_npz": null,
+  "final_sliced_wasserstein": 0.07201672345399857,
+  "final_covariance_relative_frobenius": 0.3259440490938966,
+  "final_q_cov_condition": 7.513757228851318,
+  "final_q_cov_min_eigenvalue": 0.32910871505737305,
+  "final_q_cov_max_eigenvalue": 2.472867250442505
+}

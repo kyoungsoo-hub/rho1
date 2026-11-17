@@ -1,0 +1,66 @@
+{
+  "paths": {
+    "raw_hdf5": "/home/kyoungsookim/rho1/metamotivo-M-1-datasets/data/buffer_inference_500000.hdf5",
+    "save_dir": "/home/kyoungsookim/rho1/fb_guided_raw_2026-09-22_19-58-55",
+    "shared_split_npz": null,
+    "expert_motions": "/home/kyoungsookim/humenv/data_preparation/test_train_split/large1_small1_train_0.1.txt",
+    "expert_motions_root": "/home/kyoungsookim/humenv/data_preparation/humenv_amass"
+  },
+  "model": {
+    "transition_dim": 785,
+    "hidden_dim": 1024,
+    "num_blocks": 6,
+    "timesteps": 1000
+  },
+  "train": {
+    "seed": 42,
+    "split_seed": 42,
+    "validation_fraction": 0.05,
+    "epochs": 500,
+    "batch_size": 3072,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "ema_decay": 0.99,
+    "best_checkpoint_prior_tolerance": 0.02,
+    "max_workers": 4,
+    "max_grad_norm": 1.0,
+    "log_interval": 10,
+    "gradient_diagnostic_batches_per_epoch": 0,
+    "checkpoint_epochs": [
+      100,
+      200,
+      300,
+      400,
+      500
+    ]
+  },
+  "guidance": {
+    "lambda_bellman": 2.5e-05,
+    "lambda_q": 4e-06,
+    "lambda_b": 0.15,
+    "lambda_f": 0.005,
+    "discount": 0.98,
+    "pessimism_penalty": 0.0,
+    "actor_stddev_clip": 0.3,
+    "batch_size": 3072,
+    "start_epoch": 1,
+    "ramp_epochs": 50,
+    "validation_batches": 8,
+    "action_clip": 1.0,
+    "train_goal_ratio": 0.2,
+    "expert_asm_ratio": 0.6,
+    "expert_seq_length": 8,
+    "prior_loss_threshold": 0.82,
+    "adaptive_down": 0.9,
+    "adaptive_up": 1.02,
+    "adaptive_min": 0.1,
+    "adaptive_max": 1.0
+  },
+  "evaluation": {
+    "ddim_steps": 50,
+    "final_samples": 10000,
+    "batch_size": 2048,
+    "swd_projections": 64,
+    "seed": 2026
+  }
+}

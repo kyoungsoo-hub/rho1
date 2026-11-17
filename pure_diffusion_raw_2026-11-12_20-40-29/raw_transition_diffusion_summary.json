@@ -1,0 +1,12 @@
+{
+  "best_prior_loss": 0.3333673949044586,
+  "best_epoch": 5000,
+  "best_checkpoint": "/home/kyoungsookim/rho1/pure_diffusion_raw_2026-11-12_20-40-29/raw_transition_diffusion_best.pt",
+  "final_checkpoint": "/home/kyoungsookim/rho1/pure_diffusion_raw_2026-11-12_20-40-29/raw_transition_diffusion_785dim.pt",
+  "hidden_dim": 1024,
+  "transition_dim": 785,
+  "action_clip": 1.0,
+  "shared_split_npz": null,
+  "final_sliced_wasserstein": 0.051018744707107544,
+  "final_covariance_relative_frobenius": 0.15241651307312862
+}

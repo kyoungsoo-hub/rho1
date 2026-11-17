@@ -1,0 +1,46 @@
+{
+  "paths": {
+    "raw_hdf5": "/home/kyoungsookim/rho1/metamotivo-M-1-datasets/data/buffer_inference_500000.hdf5",
+    "save_dir": "/home/kyoungsookim/rho1/pure_diffusion_raw_2026-11-12_19-24-40",
+    "shared_split_npz": null
+  },
+  "model": {
+    "transition_dim": 785,
+    "hidden_dim": 1024,
+    "num_blocks": 6,
+    "timesteps": 1000
+  },
+  "train": {
+    "seed": 42,
+    "split_seed": 42,
+    "validation_fraction": 0.05,
+    "epochs": 2000,
+    "batch_size": 4096,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "ema_decay": 0.999,
+    "max_workers": 4,
+    "max_grad_norm": 1.0,
+    "log_interval": 10,
+    "action_clip": 1.0,
+    "checkpoint_epochs": [
+      200,
+      400,
+      600,
+      800,
+      1000,
+      1200,
+      1400,
+      1600,
+      1800,
+      2000
+    ]
+  },
+  "evaluation": {
+    "ddim_steps": 250,
+    "final_samples": 10000,
+    "batch_size": 4096,
+    "swd_projections": 64,
+    "seed": 2026
+  }
+}

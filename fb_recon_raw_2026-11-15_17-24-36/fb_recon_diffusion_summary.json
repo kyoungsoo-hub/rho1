@@ -1,0 +1,20 @@
+{
+  "pretrained_ckpt": "/home/kyoungsookim/rho1/pure_diffusion_raw_2026-11-12_20-40-29/raw_transition_diffusion_best.pt",
+  "best_total_loss": 0.5290206981792033,
+  "best_total_epoch": 473,
+  "best_prior_loss": 0.33528396656050957,
+  "best_prior_epoch": 1,
+  "best_checkpoint": "/home/kyoungsookim/rho1/fb_recon_raw_2026-11-15_17-24-36/fb_guided_diffusion_raw_best.pt",
+  "best_prior_checkpoint": "/home/kyoungsookim/rho1/fb_recon_raw_2026-11-15_17-24-36/fb_guided_diffusion_raw_best_prior.pt",
+  "final_checkpoint": "/home/kyoungsookim/rho1/fb_recon_raw_2026-11-15_17-24-36/fb_guided_diffusion_raw_785dim.pt",
+  "hidden_dim": 1024,
+  "transition_dim": 785,
+  "lambda_b": 0.15,
+  "lambda_f": 0.005,
+  "train_goal_ratio": 0.2,
+  "expert_asm_ratio": 0.6,
+  "action_clip": 1.0,
+  "shared_split_npz": "/home/kyoungsookim/rho1/pure_diffusion_raw_2026-11-12_20-40-29/diffusion_split_indices.npz",
+  "final_sliced_wasserstein": 0.03735348582267761,
+  "final_covariance_relative_frobenius": 0.1634454350220601
+}
